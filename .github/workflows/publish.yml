@@ -3,6 +3,8 @@ name: Publish Helm Chart
 on:
   workflow_call:
 
+  schedule:
+    - cron: "0 0 * * *"
 jobs:
   publish:
     name: Publish Helm Chart
