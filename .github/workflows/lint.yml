@@ -1,6 +1,9 @@
 name: helmlint
 
-on: pull_request
+on:
+  pull_request:
+  schedule:
+    - cron: "0 0 * * *"
 
 jobs:
   lint-test:
